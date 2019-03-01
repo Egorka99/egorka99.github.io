@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML/CSS верстка сайтов</title>
+  <meta content="" name="description">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+  <meta content="path/to/image.jpg" property="og:image">
+  <meta name="yandex-verification" content="badf5a3796433be1" />
+ 
+  <!-- Favicons --> 
+
+  <link href="img/favicon/favicon-16x16.png" rel="shortcut icon" sizes="16x16" type="image/png">
+  <link href="img/favicon/favicon-32x32.png" rel="shortcut icon" sizes="32x32" type="image/png">
+  <link href="img/favicon/favicon-48x48.png" rel="shortcut icon" sizes="48x48" type="image/png">
+
+  <link href="img/favicon/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="img/favicon/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+  <link href="img/favicon/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta content="#000" name="theme-color">
+  <!-- Windows Phone -->
+  <meta content="#000" name="msapplication-navbutton-color">
+  <!-- iOS Safari -->
+  <meta content="#000" name=" apple-mobile-web-app-status-bar-style">
+  <!--Bootstrap-->      
+  <link href="css/bootstrap.min.css" rel="stylesheet"> 
+
+  <!--Animate.css-->    
+  <link href="css/animate.css" rel="stylesheet">
+ 
+  <!--Fotorama -->
+  <link href="css/fotorama.css" rel="stylesheet">
+
+  <!--Font Awesome -->
+  <link href="css/fontawesome-all.min.css" rel="stylesheet">
+
+  <!--Hover Effects-->
+  <link href="css/hover-effects.css" rel="stylesheet">
+
+  <!--Файл со стилями--> 
+  <link href="css/main.min.css" rel="stylesheet">
+   
+  <style>.header-top{margin-top:20px;background-color:#f4f4f4;padding:15px;position:relative}.header-top__menu{margin:0;list-style:none;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.header-top__menu li{margin-left:45px}.header-top__menu li a{color:#3d3d3d;font-weight:700}.logo{font-size:24px;font-weight:700}.logo a{vertical-align:middle;display:inline-block;margin-left:10px}.logo a:hover{color:#2b2bb0}.logo a:after{font-size:12px;display:block;content:attr(content)}.face{margin-right:20px;background-color:gray;width:60px;height:60px}.main{padding-top:70px;padding-bottom:50px}.main-info{padding:0;margin-top:50px}.main-info p{margin-top:40px;margin-bottom:20px}.main-img{display:block;width:500px;height:393px;background:url(../img/main-img.png);background-repeat:no-repeat;z-index:2;position:relative}.square{left:165px;top:20px;width:330px;height:330px;background-color:#DCDCDC;position:absolute;-webkit-border-radius:20px;border-radius:20px;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);z-index:1}.hamburger-inner,.hamburger-inner::before,.hamburger-inner::after{background-color:#000}@keyframes bounce{from{-webkit-transform:translateY(-10px);transform:translateY(-10px)}to{-webkit-transform:translateY(0);transform:translateY(0)}}@-webkit-keyframes bounce{from{-webkit-transform:translateY(-10px)}to{-webkit-transform:translateY(0)}}.button-text:before{content:"Посмотреть портфолио"}.arrow{margin:auto;position:relative;display:block;-webkit-animation:bounce .5s infinite alternate;animation:bounce .5s infinite alternate}.arrow:before,.arrow:after{content:"";display:block;position:absolute;width:0;height:0;border:10px solid transparent;border-right:0}.arrow:nth-child(1){width:8px;height:10px;background:#fff}.arrow:nth-child(1):after{top:5px;right:-1px;-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg);border-left-color:#fff} @media only screen and (max-width:320px){.main,.works{text-align:left}}@media only screen and (max-width:992px){.header-top__menu{display:none}.main{text-align:center}.main-img,.main .square{display:none}}</style>     
+ 
+</head>    
+<body>  
+   
+  <header class="header"> 
+    <div class="header-top">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-md-auto">
+            <div class="logo">
+              <img alt="Лого" src="img/logo.png"> <a content="Веб-разработчик" href="index.html">Егор Завгороднев</a>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </header> <!-- /.header -->
+
+  <section class="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="main-img"></div>
+          <div class="square"></div> 
+        </div> 
+        <div class="col-lg-5">
+          <div class="main-info" id="menu2">
+            <h1>От макета к полноценному бизнес-инструменту</h1>
+            <p>
+              HTML/CSS Верстка из PSD макета<br>
+              Доработка сайта<br>
+              Интеграция с WordPress
+          </p>
+            <a class="button-main button" href="#s1" id="main-button"><span class="button-text"></span></a>
+          </div>
+        </div> 
+      </div><!-- /.row --> 
+    </div><!-- /.container -->
+  </section><!-- /.main -->  
+
+  <section class="works" id="s1">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+
+          <h2 class="works-title">Мои последние работы</h2>
+          <p class="works-subtitle">Наведите на картинку, чтобы узнать подробнее о проекте</p>
+
+        </div>
+        <div class="col-12 col-xl-4">
+
+          <div class="works-wrap">
+            <div class="wrap">
+              <div class="project-card">
+                <div class=" front project-one"></div>
+                <div class="back">
+                  <h3>Откатные ворота</h3><button class="btn" data-target="#project-one-modal" data-toggle="modal">Сроки, стоимость и т.д</button>
+                </div> 
+              </div>
+            </div>
+          </div><!-- /.works-wrap -->
+
+        </div>
+
+        <div class="col-12 col-xl-4">
+
+          <div class="works-wrap">
+            <div class="wrap">
+              <div class="project-card">
+                <div class=" front project-two"></div>
+                <div class="back">
+                  <h3>Упаковки из картона</h3><button class="btn" data-target="#project-two-modal" data-toggle="modal">Сроки, стоимость и т.д</button>
+                </div>
+              </div>
+            </div>
+          </div><!-- /.works-wrap -->
+        </div>
+
+        <div class="col-12 col-xl-4">
+
+          <div class="works-wrap">
+            <div class="wrap">
+              <div class="project-card">
+                <div class=" front project-three"></div>
+                <div class="back">
+                  <h3>Студия дизайна</h3><button class="btn" data-target="#project-three-modal" data-toggle="modal">Сроки, стоимость и т.д</button>
+                </div>
+              </div>
+            </div>
+          </div><!-- /.works-wrap -->
+
+        </div>
+        <div class="col-12">
+          <button class="button" data-target="#form-modal" data-toggle="modal">Хочу такой же сайт!</button>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section><!-- /.works -->
+
+  <!--Модальное окно 1 проекта-->
+  <div aria-hidden="true" class="modal fade bd-example-modal-lg project-modal" id="project-one-modal" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">  
+        <div class="modal-header"> 
+          <h4 class="modal-title">Установка и монтаж откатных ворот</h4><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid bd-example-row popup">
+            <div class="row"> 
+              <div class="col-12 align-items-center">
+                <div class="popup-slider fotorama" data-nav="thumbs"><img alt="Производство" height="78" src="img/gate_2.jpg" width="116"><img alt="Производство" height="78" src="img/gate_1.jpg" width="116"> <img alt="Производство" height="78" src="img/gate_3.jpg" width="116"> <img alt="Производство" height="78" src="img/gate_4.jpg" width="116"></div>
+              </div>
+              <div class="col-12 align-items-center">
+                <div class="popup-info">
+                <h3>Задача</h3>
+                <p>Адаптивная и кроссбраузерная верстка сайта</p>
+                <h3>Сроки</h3>
+                <p>5 дней</p>
+                <h3>Стоимость</h3> 
+                <p>5200 руб.</p>
+                <h3>Что сделано</h3>
+                <p>Сайт с слайдером, модальным окном и формой обратной связи</p>
+                <h3>Код полностью соответствует современным стандартам</h3>
+                <p>Проверка HTML кода:</p>
+                <img alt="Валидность кода" src="img/gate_test_3.jpg">
+                <p>Проверка CSS кода:</p> 
+                <img alt="Валидность кода" src="img/gate_test_2.jpg">
+                <p>Проверка скорости загрузки Google Page Speed Inside:</p>
+                <img alt="Скорость загрузки" src="img/gate_test_1.jpg"></div> 
+              </div> 
+            </div>   
+          </div>
+        </div>   
+        <div class="modal-footer"> 
+          <a class="openprojectbutton button" href="project1/index.html">Перейти на страницу проекта</a> 
+        </div> 
+      </div> 
+ 
+    </div>  
+  </div>
+  
+  <!--Модальное окно 2 проекта--> 
+  <div aria-hidden="true" class="modal fade bd-example-modal-lg  project-modal" id="project-two-modal" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Производство упаковки из горфокартона</h4><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid bd-example-row popup">
+            <div class="row">
+              <div class="col-12 align-items-center">
+                <div class="popup-slider fotorama" data-nav="thumbs">
+                  <img alt="Производство" height="78" src="img/cardboard_1.jpg" width="116">
+                  <img alt="Производство" height="78" src="img/cardboard_2.jpg" width="116"> 
+                  <img alt="Производство" height="78" src="img/cardboard_3.jpg" width="116">
+                  <img alt="Производство" height="78" src="img/cardboard_4.jpg" width="116">
+                </div>
+              </div>
+              <div class="col-12 align-items-center">
+                <div class="popup-info">
+                <h3>Задача</h3>
+                <p>Адаптивная и кроссбраузерная верстка сайта</p>
+                <h3>Сроки</h3>
+                <p>5 дней</p>
+                <h3>Стоимость</h3>
+                <p>5200 руб.</p>
+                <h3>Что сделано</h3>
+                <p>Сайт с слайдером, модальным окном и формой обратной связи</p>
+                <h3>Код полностью соответствует современным стандартам</h3>
+                <p>Проверка HTML:</p><img alt="Валидность кода" src="img/goodcardboard_test_1.jpg">
+                <p>Проверка CSS:</p><img alt="Валидность кода" src="img/goodcardboard_test_2.jpg">
+                <p>Проверка скорости загрузки Google Page Speed Inside:</p><img alt="Скорость загрузки" src="img/goodcardboard_test_3.jpg"></div>
+              </div> 
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a class="openprojectbutton button" href="project2/index.html">Перейти на страницу проекта</a>
+        </div>  
+      </div> 
+    </div> 
+  </div> 
+
+  <!--Модальное окно 3 проекта-->
+  <div aria-hidden="true" class="modal fade bd-example-modal-lg project-modal" id="project-three-modal" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">  
+          <h4 class="modal-title">Студия дизайна</h4><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+        </div> 
+        <div class="modal-body">
+
+          <div class="container-fluid bd-example-row popup">
+            <div class="row">
+              <div class="col-12 align-items-center">
+                <div class="popup-slider fotorama" data-nav="thumbs">
+                  <img alt="Производство" height="78" src="img/isama_1.jpg" width="116">
+                  <img alt="Производство" height="78" src="img/isama_2.jpg" width="116"> 
+                  <img alt="Производство" height="78" src="img/isama_3.jpg" width="116">
+                   <img alt="Производство" height="78" src="img/isama_4.jpg" width="116">
+                 </div>
+              </div> 
+              <div class="col-12 align-items-center">
+                <div class="popup-info">
+                <h3>Задача</h3>
+                <p>Адаптивная и кроссбраузерная верстка сайта</p>
+                <h3>Что сделано</h3>
+                <p>Сайт с слайдером и анимацией</p>
+                <h3>Код полностью соответствует современным стандартам</h3>
+                <p>Проверка HTML</p><img alt="Валидность кода" src="img/isama_test_1.jpg">
+                <p>Проверка CSS</p><img alt="Валидность кода" src="img/isama_test_2.jpg">
+                <p>Проверка скорости загрузки Google PageSpeed Inside:</p><img alt="Валидность кода" src="img/isama_test_3.jpg"></div>
+              </div>
+            </div> 
+          </div>
+ 
+        </div>      
+        <div class="modal-footer">  
+          <a class="openprojectbutton button" href="/project3/index.html">Перейти на страницу проекта</a>
+        </div>    
+   
+      </div> 
+    </div> 
+  </div>
+ 
+  
+    <footer class="footer"> 
+    <div class="container">
+      <div class="row"> 
+        <div class="col-12">
+          <div class="logo">
+
+            <img alt="Лого" src="img/logo.png"> <a content="Веб-разработчик" href="index.html">Егор Завгороднев</a>
+ 
+          </div> 
+        </div>     
+      </div><!-- /.row -->  
+    </div><!-- /.container -->
+  </footer><!-- /.footer -->
+
+  <script src="js/jquery-1.11.2.min.js"></script>
+
+   <!-- Validator --> 
+  <script src="js/validator.min.js"></script>  
+
+    <!-- Form script -->
+  <script src="js/modalform-script.js"></script>
+  
+  <script src="js/form-scripts.js"></script> 
+    
+  <!--Bootstrap -->  
+  <script src="js/bootstrap.min.js">   
+  </script>  
+      
+  <!-- Файл со скриптами -->  
+  <script src="js/scripts.min.js"> 
+  </script>    
+
+  <!-- WOW.js -->  
+  <script src="js/wow.js"> 
+  </script> 
+  
+  <script>
+    new WOW().init();
+  </script> 
+
+  <!--Fotorama--> 
+  <script src="js/fotorama.js">
+  </script>
+
+</body>
+</html> 

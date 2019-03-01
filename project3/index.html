@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ 
+	<meta charset="utf-8">
+
+	<title>ISAMA - marketing foundation</title> 
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Шрифты --> 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">    
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone --> 
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari --> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+  
+	<!--Bootstrap --> 
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	
+	<!--Font Awesome -->
+	<link rel="stylesheet" href="css/fontawesome-all.min.css">
+
+	<!--Own carousel -->  
+	<link href="libs/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"> 
+	<link href="libs/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">  
+
+	<link rel="stylesheet" href="css/main.min.css"> 
+	  
+	<!-- Стили главного экрана --> 
+	<style>.header{margin-top:90px;margin-bottom:55px}.header-logo{color:#3687c4;font-size:41px;font-weight:400}.header-contacts{vertical-align:bottom;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.header-contacts__line{margin-left:18px;margin-right:18px;width:2px;height:27px;background-color:#bcbec3}.header-btn{display:none;background-color:transparent;outline:none;border:none;position:absolute}.navigation{vertical-align:middle}.navigation-panel ul{padding:0;margin:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;list-style:none}.navigation-panel ul li{border:1px solid #eceef4;border-left:none;border-bottom:none;padding:40px 18px;white-space:nowrap}.navigation-panel ul li:hover{background-color:#3687c4}.navigation-panel ul li:hover a{color:#fff}.navigation-panel ul li a{text-decoration:none;color:#6d6e71;font-size:13px;font-weight:700}.navigation-panel ul li:first-child{border-left:1px solid #eceef4}.navigation-search{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.navigation-search__img{margin-right:11px}.navigation-search__img i{font-size:28px}.navigation-search__text{outline:none;border:none;height:100%;white-space:nowrap;font-size:15px;font-weight:300}.main{position:relative;padding-top:50px;text-align:center;color:#fff;width:100%;background:#3c8fc9 url(../img/main-bg.jpg) center no-repeat;-webkit-background-size:cover;background-size:cover}.main-title{font-size:58px;font-weight:700;line-height:80.58px}.main-subtitle{color:#fff;margin-left:260px;font-size:45px;font-weight:300;margin-bottom:100px}. main-slider__block{position:relative;width:322px;height:241px}.main-slider__block-sub{position:absolute;bottom:0;width:100%;height:69px;background-color:#8aca51;opacity:.8;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}.main-slider__block-sub i{cursor:pointer;font-size:32px}.one{background-color:#8aca51;color:#adff63}.two{background-color:#feeb75;color:#cc9800}.nextbtn{display:inline-block;background-color:#f4f4f4}.nextbtn i{font-size:26px;color:#d4d4d4}@media only screen and (max-width:1200px){.navigation-search{margin-top:20px;margin-bottom:20px}.main{padding-top:100px;padding-bottom:300px}.main-subtitle{margin:0;text-align:center;line-height:1.65}.main-slider{display:none}}@media only screen and (max-width:768px){body{font-size:14px}h2{font-size:36px;font-weight:700}h3{font-size:18px;font-weight:700}.header-contacts{display:none}.header-logo{text-align:center}.navigation-panel{display:none;margin-bottom:40px}}</style>  
+  
+</head>	
+ 
+<body>    
+	<header>
+		<div class="container">
+			<div class="header"> 
+				<div class="row"> 
+						<div class=" col-12 col-md-5 align-self-center">
+							<div class="header-logo">
+								ISAMA
+							</div>     
+						</div>     
+						<div class="col-12 col-md-3 offset-md-4 align-self-end">
+							<div class="header-contacts">
+								<div class="header-contacts__img">  
+									<span class="tool" data-tool="+6 (228) 666 13-37"><img src="img/header-img-phone.png" alt="Телефон"></span>
+								</div>   
+								<div class="header-contacts__line"></div> 
+								<div class="header-contacts__img">
+									<span class="tool" data-tool="Saudi Arabia . Alreyadah"><img src="img/header-img-loc.png" alt="Адрес"> </span> 
+								</div>  
+								<div class="header-contacts__line"></div>
+								<div class="header-contacts__img"> 
+									<span class="tool" data-tool="arabi@salahuakbar.sa"><img src="img/header-img-mail.png" alt="Почта"></span>
+								</div>
+							</div>   
+							<div class="header-btn">
+								<div class="hamburger">
+									<div class="hamburger-box">
+									<div class="hamburger-inner">
+									</div>  
+									</div>  
+								</div>   
+							</div>
+						</div>  
+					<!-- /.header -->   
+				</div>  
+			</div>    
+			<div class="navigation">   
+				<div class="row align-items-center"> 
+					 	<div class="col-12 col-xl-8">
+					 		<nav class="navigation-panel">    
+					 			<ul id="menu" class="header-menu">    
+									<li  class=" navigation-panel__block "><a href="#">HOME</a></li> 
+				 					<li  class="navigation-panel__block  "><a href="#l1">What about ISAMA</a></li> 
+									<li  class="navigation-panel__block "><a href="#l2">What we do ?</a></li>
+									<li  class="navigation-panel__block "><a href="#l3">Our Projects</a></li>
+									<li class="navigation-panel__block "><a href="#l4">Excellent Team</a></li>
+									<li class="navigation-panel__block "><a href="#l5">Contact</a></li>
+					 			</ul>      
+					 		</nav>      
+					 	</div> 
+					 	<div class="col-2">
+					 		<div class="navigation-search">  
+					 			<div class="navigation-search__img">
+					 				<i class="fas fa-search"></i>
+					 			</div> 
+					 			<input placeholder="Type your search words" class="navigation-search__text">
+					 		</div>
+						</div>
+				</div>	 
+			</div>
+			<!-- /.navigation -->
+		</div>
+		<!-- /.container -->
+	</header>  
+	<section class="main"> 
+		<h1 class="main-title">LET’S DRAW SOME ARTS</h1>
+		<div class="main-subtitle">make your business much better</div>
+		<div class="container">  
+			<div class="row"> 
+				<div class=" col-12 offset-sm-2 col-md-7 offset-md-5">
+				<div class="main-slider">
+					<div class="owl-carousel">
+						<div class="main-slider__block">
+							<img src="img/main-img-green.png" alt="Slider img 1"> 
+							<div class="main-slider__block-sub one">
+								<i class="far fa-heart heart2"></i> 
+							</div> 
+						</div>  
+						<div class="main-slider__block">
+							<img src="img/main-img-orange.png" alt="Slider img 2">  
+							<div class="main-slider__block-sub two">
+								<i class="far fa-heart heart1"></i> 
+							</div>     
+						</div>	  
+						<div class="main-slider__block">
+							<img src="img/main-img-green.png" alt="Slider img 1">
+							<div class="main-slider__block-sub one">
+									<i class="far fa-heart heart2"></i> 
+							</div> 
+						</div>  
+						<div class="main-slider__block">
+							<img src="img/main-img-orange.png" alt="Slider img 2"> 
+							<div class="main-slider__block-sub two">
+								<i class="far fa-heart heart1"></i> 
+							</div>   
+						</div>	  
+					</div>     
+				</div>   
+				<!-- /.main-slider -->
+				</div>
+			</div>
+		</div> 
+	</section>  
+	<!-- /.main -->   
+
+ 	<section id="l1" class="about"> 
+ 		<div class="container"> 
+ 			<div class="row">
+ 				<div class="col-12 col-lg-6"> 
+
+ 					<div class="about-block">
+ 						<div class="about-block__img">
+ 							<img src="img/about-img-lamp.png" alt="About img 1">
+ 						</div>
+ 						<div class="about-block__text">
+ 							<h3 class="about-block__title">What about ISAMA</h3>
+ 							<div class="about-block__descr">
+ 								ISAMA is a marketing foundation located in Riyadh built on the talent of creation that leads to a modern concept of professionalism. At ISAMA we believe even if you are good at what you do, you have a great product or you provide an excellent service. We still can present you a little better to the world, creating your full identity, provides you with your marketing plans, design your website, print your publications, design your logo’s and offices. Simply we give your business the perfect image.
+ 							</div>
+ 						</div>
+ 						<!-- /.about-block__text -->
+ 					</div>
+
+ 				</div>    
+ 				<!-- /.col --> 
+ 				<div class="col-lg-6">
+
+ 					<div class="about-block">
+ 						<div class="about-block__img">
+ 							<img src="img/about-img-tree.png" alt="About img 2">
+ 						</div>   
+ 						<div class="about-block__text"> 
+ 							<h3 class="about-block__text-title">Why we exist</h3>
+ 							<div class="about-block__text-descr">
+ 								Reaching customer satisfaction through providing them with cutting-edge technologies that give clients access to a wide range of tools, ensuring efficient and results-oriented communication solutions, which grant them a special character that distinguishes them from the others in the business.
+ 							</div> 
+ 						</div> 
+ 						<!-- /.about-block__text -->
+ 					</div>
+
+ 				</div>
+ 				<!-- /.col -->
+ 			</div>
+ 			<!-- /.row --> 
+ 		</div>
+ 		<!-- /.container -->
+ 	</section> 
+ 	<!-- /.about -->
+
+ 	<section id="l2" class="direction">
+ 		<div class="container">
+ 			<div class="row">
+ 				<div class="col-12">
+
+ 					<div class="direction-titleblock">
+ 						<div class="direction-titleblock__img">
+ 							<img src="img/direction-img-target.png" alt="Target">
+ 						 </div>
+ 						<div class="direction-titleblock__text">
+ 							<h2>What we do ?</h2>
+ 							<div>Everything you need to do business intelligence right.</div>
+ 						</div> 
+ 					</div>
+ 					<!-- /.direction-titleblock -->
+
+ 				</div> 
+ 				<div class="col-12 col-lg-5">
+
+ 					<div class="direction-blocks">
+
+ 						<div class="direction-block">
+ 							<div class="direction-block__img">
+ 								<img src="img/direction-img-tools.png" alt="Tools">
+ 							</div>
+ 							<div class="direction-block__text">
+ 								<h3 class="direction-block__title">
+ 									Web Design & Development
+ 								</h3>
+ 								<div class="direction-block__descr">
+ 									ISAMA Pvt. Ltd. designs and develops creative websites utilizing the latest technologies.
+ 								</div>
+ 							</div> 
+ 						</div> 
+ 						<!-- /.direction-block -->
+
+ 						<div class="direction-block">
+ 							<div class="direction-block__img">
+ 						<img src="img/direction-img-cube.png" alt="Cube">
+ 							</div>
+ 							<div class="direction-block__text">
+ 								<h3 class="direction-block__title">
+ 									Software Solutions
+ 								</h3>
+ 								<div class="direction-block__descr">
+ 									with our software for professional services and consulting firms. Grow your revenue and profit margins by assigning the right people to the right projects at the right time.
+ 								</div>
+ 							</div>
+ 						</div> 
+ 						<!-- /.direction-block -->
+
+ 						<div class="direction-block">
+ 							<div class="direction-block__img">
+ 						<img src="img/direction-img-mouse.png" alt="Mouse">
+ 							</div>
+ 							<div class="direction-block__text">
+ 								<h3 class="direction-block__title">
+ 									Branding
+ 								</h3>
+ 								<div class="direction-block__descr">
+ 									We have our forte in advertising and Brand establishment. We create identities for the clients product and services in the target market.
+ 								</div> 
+ 							</div>
+ 						</div>
+ 						<!-- /.direction-block -->
+
+ 					</div>
+ 					<!-- /.direction-blocks -->
+ 				</div>
+ 				<div class="col-12 col-lg-5 offset-lg-2">
+
+ 					<div class="direction-blocks">
+
+ 						<div class="direction-block">
+ 							<div class="direction-block__img">
+ 								<img src="img/direction-img-phone.png" alt="phone">
+ 							</div>
+ 							<div class="direction-block__text">
+ 								<h3 class="direction-block__title">
+ 									Mobile Applications
+ 								</h3>
+ 								<div class="direction-block__descr">
+ 									Our Developers helps you to Design, Develop & Distribute Mobile Applications - Smarter & Faster.
+ 								</div>
+ 							</div> 
+ 						</div>
+ 						<!-- /.direction-block --> 
+
+ 						<div class="direction-block">
+ 							<div class="direction-block__img">
+ 								<img src="img/direction-img-sofa.png" alt="Sofa">
+ 							</div>  
+ 							<div class="direction-block__text">
+ 								<h3 class="direction-block__title">
+ 									Interior Design
+ 								</h3>
+ 								<div class="direction-block__descr">
+ 									We offer a variety of design services ranging from Full Service Interior Design and Styling to our Design Concierge service, all of which are executed with beautiful, custom-tailored results.
+ 								</div>
+ 							</div>
+ 						</div> 
+ 						<!-- /.direction-block --> 
+
+ 						<div class="direction-block">
+ 							<div class="direction-block__img">
+ 						<img src="img/direction-img-globus.png" alt="Globus">
+ 							</div>
+ 							<div class="direction-block__text">
+ 								<h3 class="direction-block__title">
+ 									SEO & Web Marketing Services
+ 								</h3>
+ 								<div class="direction-block__descr">
+ 									 We offer a variety of design services ranging from Full Service Interior Design and Styling to our Design Concierge service, all of which are executed with beautiful, custom-tailored results.  
+ 								</div>
+ 							</div>
+ 						</div>
+ 						<!-- /.direction-block -->
+
+ 					</div>
+ 					<!-- /.direction-blocks -->
+ 				</div>
+ 			</div> 
+ 			<!-- /.row -->
+ 		</div>
+ 		<!-- /.container -->
+ 	</section>
+ 	<!-- /.direction -->
+
+ 	<section id="l3" class="projects">
+ 		<div class="container"> 
+ 			<div class="row">
+ 				<div class="col-12">
+ 					<div class="projects-titleblock">
+ 						<div class="projects-titleblock__img">
+ 							<img src="img/projects-img-chem.png" alt="Chem">
+ 						</div>
+ 						<!-- /.projects-titleblock__img -->
+ 						<div class="projects-titleblock__text">
+ 							<h2 class="projects-titleblock__title">
+ 								Our Projects
+ 							</h2>
+ 							<!-- /.projects-titleblock__title -->
+ 							<div class="projects-titleblock__descr">
+ 								Some of our awesome work Proud of doing
+ 								great works for our clients
+ 							</div>
+ 							<!-- /.projects-titleblock__descr -->
+ 						</div>
+ 						<!-- /.projects-titleblock__text -->
+ 					</div> 
+ 					<!-- /.projects-titleblock -->
+
+ 				</div>  
+ 				<div class="col-10 offset-1">
+
+ 					<div class="projects-categories">
+ 						<div class="projects-category">
+ 							<a href="#">All</a>
+ 						</div>   
+ 						<!-- /.projects-category -->
+ 						<div class="projects-category">
+ 							<a href="#">Mobile Apps</a>
+ 						</div> 
+ 						<!-- /.projects-category -->
+ 						<div class="projects-category">
+ 							<a href="#">Identities</a> 
+ 						</div>
+ 						<!-- /.projects-category -->
+ 						<div class="projects-category">
+ 							<a href="#">Interior Design</a>
+ 						</div>
+ 						<!-- /.projects-category -->
+ 						<div class="projects-category"> 
+ 							<a href="#">UI/UX</a>  
+ 						</div> 
+ 						<!-- /.projects-category -->
+ 					</div> 
+ 					<!-- /.projects-categories -->
+ 
+ 				</div>   
+	 				<div class="col-12 col-xl-3 ">  
+
+	 					<div class="projects-block">
+	 						<div class="projects-block__img">
+	 							<img src="img/projects-logo-1.jpg" alt="Лого 1"> 
+	 						</div>
+	 						<div class="projects-block__buttons">
+	 							<div class="projects-block__link">
+	 								<i class="fas fa-link"></i>
+	 							</div>
+	 							<div class="projects-block__plus">
+	 								<i class="fas fa-plus"></i>
+	 							</div>
+	 						</div>  
+	 					</div>   
+ 
+	 				</div> 
+	 				<div class="col-12 col-xl-3 ">
+
+	 					<div class="projects-block">
+	 						<div class="projects-block__img">
+	 							<img src="img/projects-logo-2.jpg" alt="Лого 2">
+	 						</div>
+	 						<div class="projects-block__buttons">
+	 							<div class="projects-block__link">
+	 								<i class="fas fa-link"></i>
+	 							</div>
+	 							<div class="projects-block__plus">
+	 								<i class="fas fa-plus"></i>
+	 							</div>
+	 						</div>
+	 					</div> 
+
+	 				</div>
+	 				<div class="col-12 col-xl-3 ">  
+
+	 					<div class="projects-block">
+	 						<div class="projects-block__img">
+	 							<img src="img/projects-logo-3.jpg" alt="Лого 4">
+	 						</div>
+	 						<div class="projects-block__buttons">
+	 							<div class="projects-block__link">
+	 								<i class="fas fa-link"></i>
+	 							</div>
+	 							<div class="projects-block__plus">
+	 								<i class="fas fa-plus"></i>
+	 							</div>
+	 						</div>
+	 					</div>
+
+	 				</div>
+	 				<div class="col-12 col-xl-3 ">
+
+	 					<div class="projects-block">
+	 						<div class="projects-block__img">
+	 							<img src="img/projects-logo-4.jpg" alt="Лого 4">
+	 						</div>
+	 						<div class="projects-block__buttons">
+	 							<div class="projects-block__link">
+	 								<i class="fas fa-link"></i>
+	 							</div>
+	 							<div class="projects-block__plus">
+	 								<i class="fas fa-plus"></i>
+	 							</div>
+	 						</div>
+	 					</div>  
+
+	 				</div> 
+	 				<div class="col-12 col-xl-3">
+
+	 					<div class="projects-block">
+	 						<div class="projects-block__img">
+	 							<img src="img/projects-logo-5.jpg" alt="Лого 5">
+	 						</div>
+	 						<div class="projects-block__buttons">
+	 							<div class="projects-block__link">
+	 								<i class="fas fa-link"></i>
+	 							</div>
+	 							<div class="projects-block__plus">
+	 								<i class="fas fa-plus"></i>
+	 							</div>
+	 						</div>
+	 					</div>
+
+	 				</div>
+	 				<div class="col-12 col-xl-3 ">
+
+	 					<div class="projects-block">
+	 						<div class="projects-block__img">
+	 							<img src="img/projects-logo-6.jpg" alt="Лого 6">
+	 						</div>
+	 						<div class="projects-block__buttons">
+	 							<div class="projects-block__link">
+	 								<i class="fas fa-link"></i>
+	 							</div>
+	 							<div class="projects-block__plus">
+	 								<i class="fas fa-plus"></i>
+	 							</div>
+	 						</div>
+	 					</div>
+
+	 				</div>
+	 				<div class="col-12 col-xl-3 ">
+
+	 					<div class="projects-block">
+	 						<div class="projects-block__img">
+	 							<img src="img/projects-logo-7.jpg" alt="Лого 7">
+	 						</div>
+	 						<div class="projects-block__buttons">
+	 							<div class="projects-block__link">
+	 								<i class="fas fa-link"></i>
+	 							</div>
+	 							<div class="projects-block__plus">
+	 								<i class="fas fa-plus"></i>
+	 							</div>
+	 						</div>
+	 					</div>
+
+	 				</div>
+	 				<div class="col-12 col-xl-3 ">
+
+	 					<div class="projects-block">
+	 						<div class="projects-block__img">
+	 							<img src="img/projects-logo-8.jpg" alt="Лого 8">
+	 						</div>
+	 						<div class="projects-block__buttons">
+	 							<div class="projects-block__link">
+	 									<i class="fas fa-link"></i>
+	 								</div>
+	 							<div class="projects-block__plus">
+	 									<i class="fas fa-plus"></i>
+	 							</div>
+	 						</div> 
+	 					</div>
+	 				</div>  
+
+ 			</div>  
+ 			<!-- /.row -->
+ 		</div>
+ 		<!-- /.container -->
+ 	</section> 
+ 	<!-- /.projects -->
+	 
+	<section id="l4" class="team">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-7 offset-lg-3">
+
+					<div class="team-titleblock">
+						<div class="team-titleblock__img">
+							<img src="img/team-img-boss.png" alt="Boss">
+						</div>
+						<!-- /.team-titleblock__img -->
+						<div class="team-titleblock__text">
+							<h2 class="team-titleblock__title">
+								Meet Our Team
+							</h2>
+							<!-- /.team-titleblock__title -->
+							<div class="team-titleblock__descr">
+								We have highly qualified staff with distinguished significant 
+								experiences in their field who work under pressure.
+							</div>
+							<!-- /.team-titleblock__descr -->
+						</div>
+						<!-- /.team-titleblock__text -->
+					</div>
+					<!-- /.team-titleblock -->
+
+				</div>
+				<!-- /.col-12 -->
+
+				<div class="col-12 col-xl-3 ">
+
+					<div class="team-block">
+						<div class="team-block__img">
+							<img src="img/team-img-1.png" alt="Team 1"> 
+						</div>
+						<!-- /.team-block__img -->
+						<div class="team-block__title">Tamer</div>
+						<!-- /.team-block__title -->
+						<div class="team-block__subtitle">
+							Senior Software Engineer
+						</div>
+						<!-- /.team-block__subtitle -->
+						<div class="team-block__social">
+							<i class="fab fa-facebook"></i>	
+							<i class="fab fa-twitter"></i>
+							<i class="fab fa-instagram"></i>
+							<i class="fab fa-linkedin-in"></i>
+						</div> 
+					<!-- /.team-block__social -->
+					</div>
+					<!-- /.team-block --> 
+
+				</div> 
+				<div class="col-12 col-xl-3 "> 
+
+					<div class="team-block">
+						<div class="team-block__img">
+							<img src="img/team-img-2.png" alt="Team 2">
+						</div> 
+						<!-- /.team-block__img -->
+						<div class="team-block__title">Hazem</div>
+						<!-- /.team-block__title -->
+						<div class="team-block__subtitle">
+							PHP Developer
+						</div>
+						<!-- /.team-block__subtitle -->
+						<div class="team-block__social">
+							<i class="fab fa-facebook"></i>	
+							<i class="fab fa-twitter"></i>
+							<i class="fab fa-instagram"></i>
+							<i class="fab fa-linkedin-in"></i>
+						</div> 
+					<!-- /.team-block__social -->
+					</div>
+					<!-- /.team-block -->
+
+				</div> 
+				<div class="col-12 col-xl-3 ">
+
+					<div class="team-block">
+						<div class="team-block__img">
+							<img src="img/team-img-3.png" alt="Team 3">
+						</div>
+						<!-- /.team-block__img -->
+						<div class="team-block__title">Mohammed</div>
+						<!-- /.team-block__title -->
+						<div class="team-block__subtitle">
+							PHP Developer
+						</div>
+						<!-- /.team-block__subtitle -->
+						<div class="team-block__social">
+							<i class="fab fa-facebook"></i>	
+							<i class="fab fa-twitter"></i>
+							<i class="fab fa-instagram"></i>
+							<i class="fab fa-linkedin-in"></i>
+						</div> 
+					<!-- /.team-block__social -->
+					</div>
+					<!-- /.team-block -->
+
+				</div>
+				<div class="col-12 col-xl-3 ">
+
+					<div class="team-block">
+						<div class="team-block__img">
+							<img src="img/team-img-4.png" alt="Team 4">
+						</div>
+						<!-- /.team-block__img -->
+						<div class="team-block__title">Ahmed</div>
+						<!-- /.team-block__title -->
+						<div class="team-block__subtitle">
+							UI/UX Designer
+						</div>
+						<!-- /.team-block__subtitle -->
+						<div class="team-block__social">
+							<i class="fab fa-facebook"></i>	
+							<i class="fab fa-twitter"></i>
+							<i class="fab fa-instagram"></i>
+							<i class="fab fa-linkedin-in"></i>
+						</div> 
+					<!-- /.team-block__social -->
+					</div>
+					<!-- /.team-block -->
+
+				</div>
+			</div>
+			<!-- /.row -->
+		</div>  
+		<!-- /.container -->
+	</section> 
+	<!-- /.team --> 
+ 
+	<section id="l5" class="map">
+		<h2 style="display: none;">Контакты</h2> <!-- For validator -->
+		<div class="container">
+			<div class="row"> 
+				<div class="col-12"> 
+					<div class="map-mobile"></div>
+				</div>			
+				<div class="col-4 offset-4">
+
+					<div class="map-buttons">
+
+						<div class="map-button">
+							<span class="tool" data-tool="Saudi Arabia . Alreyadah"><i class="fas fa-map-marker-alt"></i></span> 
+						</div>				
+						<!-- /.map-button -->
+
+						<div class="map-button">
+							<span class="tool" data-tool="arabiproebalirashke@salahtop.top"><i class="far fa-envelope"></i></span> 
+						</div>
+						<!-- /.map-button -->
+
+						<div class="map-button">
+							<span class="tool" data-tool="+7 (777) 777 77-77"><i class="fas fa-phone"></i></span>
+						</div>
+						<!-- /.map-button -->
+
+					</div>
+					<!-- /.map-buttons -->	
+				</div>
+				<!-- /.col-2 offset-5 -->
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.map -->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-4">
+
+					<div class="footer-social">
+						<div class="footer-social__block">
+							<i class="fab fa-facebook"></i>
+						</div>
+						<div class="footer-social__block">
+							<i class="fab fa-twitter"></i>
+						</div>
+						<div class="footer-social__block">
+							<i class="fab fa-instagram"></i>
+						</div>
+						<div class="footer-social__block">
+							<i class="fab fa-google-plus-g"></i>
+						</div>
+					</div>
+					<!-- /.footer-social -->
+
+					<div class="footer-copyright">
+						© Copyright 2014 - ISAMA for information technology 
+					</div>
+					<!-- /.footer-copyright -->
+				</div>
+				<!-- /.col-4 -->
+				<div class="col-12 col-md-6 offset-md-2">
+
+					<div class="footer-emailform">
+						<div class="footer-emailform__img">  
+							<i class="far fa-address-card"></i>
+						</div> 
+						<input placeholder="Enter your Email" class="footer-emailform__text">
+						<button class="footer-emailform__button">
+							Join 
+						</button>  
+						<!-- /.footer-emailform__button -->
+					</div>
+					<!-- /.emailform --> 
+
+					<div class="footer-navigation">
+						<nav>  
+							<ul>  
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Job</a></li>
+								<li><a href="#">Terms</a></li>
+								<li><a href="#">Privacy</a></li>
+								<li><a href="#">Policy</a></li>
+							</ul>     
+						</nav>  
+					</div>  
+					<!-- /.footer-navigation -->  
+
+				</div>
+				<!-- /.col-6 offset-2 -->
+			</div> 
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</footer>
+	<!-- /.footer -->
+	
+	<script src="js/scripts.min.js"></script>
+	<script src="libs/owlcarousel/owl.carousel.min.js"></script>
+
+</body>
+</html>
