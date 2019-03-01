@@ -1,0 +1,471 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "_mixins/angle-block"  
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box 
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+ 
+html, body 
+	height: 100%
+
+body 
+	margin: 0
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden		
+
+img 
+	max-width: 100%
+  
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
+	background-color: #000    
+
+a
+	outline: none
+i
+	background-color: $accent 
+	padding: 10px
+	border-radius: 50% 
+	color: #fff
+h1,h2,h3
+	text-transform: uppercase  
+	font-weight: 800 
+h1  
+	font-size: 42px
+	color: #fff
+h2 
+	font-size: 30px
+	color: #000
+h3 
+	font-size: 20px 
+	color: #000 
+input
+	outline: none
+
+.button
+	outline: none  
+	border-radius: 25px
+	border: none
+	color: #fff
+	text-transform: uppercase
+	font-weight: 800  
+	padding: 10px 50px
+	cursor: pointer
+	text-shadow: 1px 1px 0 #456
+	font-size: 16px
+	  
+.button-green  
+	background: linear-gradient(#91de1e , #61c91a) #73d419;
+.button-blue   
+	background: linear-gradient(#6ea7b0, #477282) #598c99;
+.blue 
+	background: linear-gradient(#6ea7b0, #477282) #598c99;
+
+.shadow //блок  с тенью   
+	z-index: 1
+	position: relative    
+	background: #000 url(../img/main_img.jpg) center no-repeat
+	background-size: cover  
+	&::before 
+		content: '' 
+		display: block 
+		position: absolute 
+		left: 0
+		top: 0
+		width: 100%     
+		height: 100%  
+		z-index: 0
+		background-color: rgba(16,39,45,0.8)
+
+.section-subtitle
+	color: gray
+	font-size: 16px 
+
+///***Чекбокс***
+.checkbox
+	display: none
+	&-custom 
+		position: relative   
+		width: 20px            
+		height: 20px            
+		border: 1px solid #fff
+.checkbox-custom , .label  
+	display: inline-block
+	vertical-align: middle
+.checkbox:checked + .checkbox-custom::before 
+	content: "\2713" 
+	color: #fff
+	position: absolute           
+	top: -4px  
+	right: 2px
+	bottom: 2px 
+	left: 3px 
+	border-radius: 2px
+
+///***Линия***
+.line
+	background-color: #000
+	height: 1px 
+	width: 140px
+	margin: auto
+	margin-bottom: 50px
+.mini-line
+	margin-bottom: 10px
+	background-color: $accent
+	width: 30px 
+
+//***Верхняя панель***
+header      
+	text-transform: uppercase 
+.top-nav 
+		background-color: rgb(16,39,45) 
+		position: relative
+		&_menu 
+			margin: 0  
+			list-style: none
+			padding: 0 
+			display: flex
+			li  
+				margin-left: 45px 
+				padding-top: 20px
+				padding-bottom: 20px
+				&:first-child
+					margin-left: 0
+				a 
+					cursor: pointer
+					font-size: 12px
+					text-decoration: none
+					text-transform: uppercase
+					font-weight: bold 
+					color: rgb(100,178,191)       
+			li:hover
+				border-bottom: 2px solid $accent 
+				a 
+					color: $accent	
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
+		background-color: #000
+
+//***Форма***
+.form     
+		padding: 20px
+		background-color: rgb(25,62,71)
+		text-align: center 
+		color: #fff
+		text-transform: uppercase
+		&-title   
+			font-weight: bold
+			font-size: 16px
+			line-height: 0.8
+			p:first-child
+				font-size: 24px
+		&-subtitle
+			line-height: 1.2
+			font-weight: bold
+			font-size: 12px
+			margin-bottom: 15px
+		&-input 
+			margin: auto
+			text-align: center
+			display: block
+			border: none
+			border-bottom: 1px solid #fff
+			background: none
+			text-transform: uppercase
+			color: #fff
+			font-size: 16px
+			margin-bottom: 20px   
+
+// Стили главного экрана в index.html 
+ 
+///***Особенности*** 
+.features
+	padding-bottom: 100px
+	padding-top: 70px
+	text-align: center
+	&-block
+		text-align: left
+		margin-bottom: 50px
+		display: flex
+		&__text
+			padding: 0
+			margin-left: 30px
+			line-height: 1	
+
+///***Список продукции *** 
+.productlist     
+		padding-top: 70px
+		padding-bottom: 70px 
+		background-color: $gray
+		text-align: center
+		&__title 
+			text-transform: none
+			text-align: left 
+		&-block
+			min-height: 578px
+			font-size: 14px 
+			background-color: #fff 
+			padding: 50px 20px
+			padding-right: 10px //ie
+			border-radius: 5px
+			margin-bottom: 30px
+			&__price
+				margin-top: 30px
+				text-align: left
+				margin-bottom: 30px
+			&__text 
+				text-align: left
+				display: flex
+				align-items: center 
+				p 
+					margin-left: 10px
+		&-adv
+			margin-top: 70px
+			display: flex
+			align-items: center
+			margin-bottom: 40px
+			h3
+				margin-left: 20px
+
+ 
+///***Список продукции 2***
+.productlist-two
+	padding-top: 70px
+	padding-bottom: 70px
+	text-align: center
+	&-block 
+		min-height: 578px
+		background-color: $gray
+		font-size: 14px
+		padding: 50px 20px 
+		border-radius: 5px
+		margin-bottom: 30px
+
+
+///***Калькулятор***
+.calculator
+	padding-top: 30px 
+	padding-bottom: 50px
+	background-color: rgb(16,40,45)
+	text-align: left 
+	color: rgb(100,178,191)	
+	&-wrap    
+		display: flex
+	&-line
+		background-color: rgb(100,178,191)
+	&-title
+		text-align: center
+		color: #fff  
+	&-block
+		margin-bottom: 30px
+		margin-left: 20px
+	&-total
+		text-align: center
+	&-categorytitle
+		text-transform: uppercase
+	h3, &-total__price, &-categorytitle
+		color: #fff 
+	&-checkbox
+		margin-right: 20px
+ 
+	&-width  
+		&__checkbox
+			display: flex
+
+.price-block
+	display: flex
+	align-items: center
+	justify-content: center
+
+//Переключатель 
+.switch 
+    background-color: #f53333
+    display: block
+    float: left 
+    border-radius: 50%
+    transition: left 0.3s ease
+    height: 18px
+    left: 5px
+    position: relative
+    top: 1px 
+    width: 18px
+    z-index: 1 
+
+.toggle-bg 
+    background: #fff
+    display: block
+    float: left
+    height: 21px
+    position: relative
+    border-radius: 20px
+    width: 52px
+    input  
+    	height: 28px
+	    left: 0
+	    margin: 0
+	    opacity: 0
+	    padding: 0
+	    position: absolute
+	    top: -10px  
+	    width: 36px
+	    z-index: 2
+
+.toggle-bg input:checked~.switch
+	content: "Да" 
+	left: 5px   
+	background-color: #f53333
+.toggle-bg input~:checked~.switch
+ 	left: 28px
+ 	background-color: $accent
+.toggle-bg input:checked 
+	z-index: 0
+.toggle-bg input:checked 
+ 	
+///***Схема работы***
+.workschema
+	background: #000 url(../img/howto_img.jpg) center no-repeat
+	text-align: center
+	color: #fff
+	padding-bottom: 100px 
+	padding-top: 70px
+	h2,h3
+		color: #fff
+ 
+///***Предложение*** 
+.offer 
+	padding-top: 50px
+	padding-bottom: 50px
+	&-block 
+		display: flex
+		&__text 
+			position: relative
+			margin-top: 100px
+			text-transform: uppercase
+			font-weight: 800
+			z-index: 1
+			&-image   
+				opacity: 0.5
+				z-index: -1
+				top: -51px
+				left: 16px
+				position: absolute
+	&-form
+		display: flex 
+		align-items: center
+		justify-content: center
+///***Наши работы***
+.ourworks	
+	text-align: center 
+	background-color: $gray
+	padding-top: 70px
+	padding-bottom: 100px
+	&-img
+		margin: auto
+		width: 600px
+		height: 300px
+
+///***Отзывы*** 
+.feedback
+	padding-top: 70px
+	padding-bottom: 100px
+	text-align: center
+	font-size: 12px
+	&-block  
+		text-align: left
+		display: flex
+		&__info 
+			margin-left: 20px
+		&__photo
+			display: inline-block
+			margin-right: 20px
+
+///***Контакты***
+.contacts
+	position: relative
+	&-block 
+		position: absolute
+		bottom: 0
+		right: 0
+		padding: 20px
+		background-color: rgb(25,62,71)			
+		color: #fff
+		h2,h3,a 
+			color: #fff
+	&-title
+		text-align: center
+	&-button 
+		text-align: center
+
+//***Модальное окно*** 
+//
+// 
+.overlay  
+	position: fixed
+	display: none 
+	top: 0
+	width: 100%
+	height: 100% 
+	z-index: 10 
+	background-color: rgba(#000,0.6) 
+	.popup  
+		max-width: 100%
+		position: fixed
+		left: 50%  
+		width: 500px 
+		top: 100px
+		transform: translateX(-50%)
+		&-close 
+			position: absolute
+			font-size: 35px 
+			color: #fff
+			right: -20px
+			top: -30px
+			font-weight: 300 
+			cursor: pointer  
+
+#btn-ready , .btn-main 
+	display: none	 
+       
+ 
+@import "media" // Всегда в конце
+         
